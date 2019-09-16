@@ -63,7 +63,7 @@ https://github.com/oshlab/Breadboard-Arduino
 を参考に*(後で手順を記載)*
 
 ### スケッチからhexファイルを得る
-スケッチ→書き込み装置を使って書き込む
+スケッチ→コンパイルしたバイナリを出力
 
 ### avrdue-serjtagでの実際の書き込み手順
 ```
