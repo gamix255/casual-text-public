@@ -59,8 +59,16 @@ GND A0 pin23
 ```
 
 ### ボード情報のIDEへの追加
+
+https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard
+から、ファイルをダウンロードしてそのまま使えるような記述が色んなところにあるけれど、
+1.6.xまでの定義ファイルしかないため、ファイル内の行が1行足りなかった。  
+
 https://github.com/oshlab/Breadboard-Arduino 
-を参考に*(後で手順を記載)*
+を参考にボードマネージャーの追加画面から次の行を追加した。
+```
+https://raw.githubusercontent.com/oshlab/Breadboard-Arduino/master/avr/boardsmanager/package_oshlab_breadboard_index.json
+```
 
 ### スケッチからhexファイルを得る
 スケッチ→コンパイルしたバイナリを出力
@@ -70,3 +78,7 @@ https://github.com/oshlab/Breadboard-Arduino
 実際の書き込み手順
 avrdude -v -patmega328p -c breakout -Pft0 -B19200 -U flash:w:sketch_sep16a.ino.arduino_standard.hex
 ```
+
+
+参考
+- https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard
