@@ -44,7 +44,7 @@ avrdude: error: no libftdi or libusb support. Install libftdi1/libusb-1.0 or lib
 
 ### 配線
 下記の通りに配線  
-*(後でもう少し詳しく)*
+
 ```
 DTR RESET pin1
 CTS D13 pin19
@@ -57,6 +57,11 @@ GND GND pin8
 GND A0 pin23
 
 ```
+
+![回路図](./images/screenshot01.jpg)
+![配線図](./images/screenshot02.jpg)
+（図には別の用途のときに付けていたコンデンサが無駄についています。
+。おそらく、シリアル経由でスケッチを読み込ませる際に、自動リセットしようとした名残です。）
 
 ### ボード情報のIDEへの追加
 
@@ -79,6 +84,9 @@ https://raw.githubusercontent.com/oshlab/Breadboard-Arduino/master/avr/boardsman
 avrdude -v -patmega328p -c breakout -Pft0 -B19200 -U flash:w:sketch_sep16a.ino.arduino_standard.hex
 ```
 
+### 宿題（気になること）
+この書き込みかただと、Bootloader要らずですが、
+書き込む内容次第では出力がかち合ったりしてる気もする。
 
 参考
 - https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard
