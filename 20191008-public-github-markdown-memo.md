@@ -19,7 +19,18 @@ githubのREADME.mdのみのリポジトリとかも見ることが多くなっ�
 - 相対パスリンク
   例：[上記の文書へのリンク](/20190916-ATmega328P-with-ArduinoIDE-in-2019.md)
 - ほかのファイルのインクルード（試行錯誤中）<br>
+<details>
+<summary> インクルードに関しての試行錯誤（JavaScriptでgist-it編）
+ </summary>
+<p>
+https://gamix255.github.io/casual-text-public/20191008-public-github-markdown-memo の方では見えますが、
+XSS防止の観点で https://github.com/gamix255/casual-text-public/blob/master/20191008-public-github-markdown-memo.md の方では表示ができません。
 <script src="https://gist-it.appspot.com/https://github.com/gamix255/t/blob/master/t"></script>
+
+
+</p>
+</details>
+
 
 
 
