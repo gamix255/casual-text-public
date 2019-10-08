@@ -17,7 +17,7 @@ githubのREADME.mdのみのリポジトリとかも見ることが多くなっ�
 - github pages 経由で公開してみる。<br>
   例：https://gamix255.github.io/casual-text-public/20190916-ATmega328P-with-ArduinoIDE-in-2019.html
 - 相対パスリンク
-  例：[上記の文書へのリンク](/20190916-ATmega328P-with-ArduinoIDE-in-2019.html)
+  例：[上記の文書へのリンク](/20190916-ATmega328P-with-ArduinoIDE-in-2019.md)
 - ほかのファイルのインクルード（試行錯誤中）
 
 
