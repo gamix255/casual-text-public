@@ -8,5 +8,13 @@ Gitlab上では動く。（段数制限有とのこと）
 include::20191008-public-github-markdown-memo.md[]
 ----
 
-
 link:/20191008-public-github-markdown-memo.md[markdownでいろいろ試した例]
+
+github上のプレビューでも相対リンクは使える。
+
+markdwonじゃないので、
+
+* https://gamix255.github.io/casual-text-public/20191008-adoc-sample.html
+* https://gamix255.github.io/casual-text-public/20191008-adoc-sample
+
+などにそのままではアクセスできなかった。
