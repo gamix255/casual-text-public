@@ -1,0 +1,12 @@
+=== AsciiDoc形式で記事を書くとプレビュー中にソースコード等を引用できるか、など試してみる。
+
+外部ファイルの取り込み？は、こんな感じで、github上では働かない。
+Gitlab上では動く。（段数制限有とのこと）
+
+[source,md]
+----
+include::20191008-public-github-markdown-memo.md[]
+----
+
+
+link:/20191008-public-github-markdown-memo.md[markdownでいろいろ試した例]
