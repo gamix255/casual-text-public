@@ -18,7 +18,9 @@ githubのREADME.mdのみのリポジトリとかも見ることが多くなっ�
   例：https://gamix255.github.io/casual-text-public/20190916-ATmega328P-with-ArduinoIDE-in-2019.html
 - 相対パスリンク
   例：[上記の文書へのリンク](/20190916-ATmega328P-with-ArduinoIDE-in-2019.md)
-- ほかのファイルのインクルード（試行錯誤中）
+- ほかのファイルのインクルード（試行錯誤中）<br>
+<script src="https://gist-it.appspot.com/https://github.com/gamix255/t/blob/master/t"></script>
+
 
 
 ### 宿題（気になること）
