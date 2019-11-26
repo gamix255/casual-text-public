@@ -38,12 +38,62 @@ goormIDEのフリープラン（詳しくは本家を参照のこと）
 上記の内容で作成する、を選択すると、10秒未満でコンテナが作成され、
 コンテナの実行、を選択すると、10秒未満でコンテナが実行された。
 
-### npm
-後ほど書く。
+### npm install
+package.jsonがあるため、npm installから先に進める。  
+#結構未知の領域のため間違ったことを書いているかも。
+```
+npm install
+```
+そして、npm runで出力を見てみたところ、開発用サーバの起動とビルドがある
+```
+# npm run
+Scripts available in kackac via `npm run-script`:
+  watch_games
+    light-server -s docs -w "docs/**/* # # reload"
+  watch_lib
+    rollup -c -w
+  build_lib_typings
+    tsc --declaration --emitDeclarationOnly --target es2015 --module commonjs --outFile tmp/_bundle.d.ts src/main.ts
+```
+
 
 ### 実行とポートフォワード（公開）
-後ほど書く。
+rollupは次の手順
+```
+#npm run watch_lib 
+```
+そして、開発用サーバは、次のように起動する。
+```
+root@goorm:/workspace/kackac3(master)# npm run watch_games
+
+> kackac@1.0.0 watch_games /workspace/kackac3
+> light-server -s docs -w "docs/**/* # # reload"
+
+light-server is listening at http://0.0.0.0:4000
+  serving static dir: docs
+
+light-server is watching these files: docs/**/*
+  when file changes,
+  this event will be sent to browser: reload
+
+```
+
+プロジェクト→実行URLとポートで、自分専用のURLが発行されている。  
+デフォルトでは3000番にポートフォワードされている。  
+（Expressのデフォルト値のみたい。）、light-serverを変更するのではなく、ここ
+にTCP4000宛ということで、新規のサブドメインを登録するとすぐに、外部から閲覧が可能になった。
+
 
 ### 感想
-後ほど書く（けど、概ね快適だった。。）
+- rollup やnpm等、自分の日常で使わない概念が多いけれど、躓きながら、開発環境構築までは
+一応終わった。
+- goormIDEはPCのChromeから使った。概ね快適だった。
+- この記事を書くために4回ぐらい、コンテナを壊して作り直したけれど、
+合わせて1時間程度の所要時間。
+- CPU使用率等、リソースが表示されているのが、goormideのチャームポイントと思う。
 
+### 参考ページ
+- rollupについて参照した。実際には前述の手順で行ったため、参考にしたのみ
+　https://qiita.com/cognitom/items/e3ac0da00241f427dad6
+- npmについて参照した。
+ https://qiita.com/hashrock/items/15f4a4961183cfbb2658
